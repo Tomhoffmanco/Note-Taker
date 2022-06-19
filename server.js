@@ -18,3 +18,18 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 
 // api route / get request
+app.get();
+
+// api route / post request
+app.post();
+
+// api route / delete request
+app.delete();
+
+//  html routes
+app.get("/notes", function (req, res) {
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
+});
+
+app.get();
+res.sendFile(path.join(__dirname, "./public/index.html"));
